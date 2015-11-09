@@ -1,6 +1,6 @@
 FROM linuxserver/baseimage.nginx
 MAINTAINER smdion <me@seandion.com>
-ENV APTLIST="python-pip build-essential python-dev libffi-dev libssl-dev git inotify-tools"
+ENV APTLIST="python2.7 python-requests git inotify-tools"
 
 #Applying stuff
 RUN apt-get update -q && \
