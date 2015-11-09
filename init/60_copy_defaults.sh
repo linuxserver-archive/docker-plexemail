@@ -9,7 +9,6 @@ if [ ! -f /config/cron/crontab ]; then
 	cp /defaults/crontab /config/cron/crontab
 fi
 
-if [ ! -f /config/www/]; then
-	mkdir /config/www
-	cp /config/www/index.html /config/www/index.html
+if [ ! -f /config/www/LICENSE ]; then
+	cp -r /app/plexemail/web/* /config/www/
 fi
