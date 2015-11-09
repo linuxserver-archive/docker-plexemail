@@ -5,7 +5,7 @@ if [ ! -f /config/config.conf ]; then
 fi
 
 if [ ! -f /config/cron/crontab ]; then
-	mkdir /config/cron/
+	mkdir -p /config/cron/
 	cp /defaults/crontab /config/cron/crontab
 fi
 
