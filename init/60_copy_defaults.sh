@@ -12,3 +12,5 @@ fi
 if [ ! -f /config/www/LICENSE ]; then
 	cp -r /app/plexemail/web/* /config/www/
 fi
+
+chown abc:abc /config/*
