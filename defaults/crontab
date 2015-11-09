@@ -1,0 +1,2 @@
+# Run every sunday at 11 PM
+00 23 * * 0 abc python /app/plexemail/scripts/plexEmail.py -c /config/config.conf;
