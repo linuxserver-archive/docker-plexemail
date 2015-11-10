@@ -9,8 +9,4 @@ if [ ! -f /config/cron/crontab ]; then
 	cp /defaults/crontab /config/cron/crontab
 fi
 
-if [ ! -f /config/www/LICENSE ]; then
-	cp -r /app/plexemail/web/* /config/www/
-fi
-
 chown abc:abc /config/*
