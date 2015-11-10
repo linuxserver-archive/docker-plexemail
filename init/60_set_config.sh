@@ -9,4 +9,4 @@ if [ ! -f /config/cron/crontab ]; then
 	cp /defaults/crontab /config/cron/crontab
 fi
 
-chown abc:abc /config/*
+chown abc:abc -R /config
