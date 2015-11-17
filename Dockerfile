@@ -9,6 +9,7 @@ apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 
 #Adding Custom files
+ADD cron/ /etc/cron.d/
 ADD init/ /etc/my_init.d/
 ADD services/ /etc/service/
 ADD defaults/ /defaults/
