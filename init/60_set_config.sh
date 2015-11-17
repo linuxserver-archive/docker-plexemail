@@ -6,7 +6,7 @@ fi
 
 if [ ! -f /config/cron/crontab ]; then
 	mkdir -p /config/cron/
-	cp /defaults/crontab /config/cron/crontab
+	cp /etc/cron.d/crontab /config/cron/crontab
 fi
 
 if [ ! -f /app/plexemail/web/index.html ]; then
