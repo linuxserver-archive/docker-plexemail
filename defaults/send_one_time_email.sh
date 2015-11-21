@@ -5,4 +5,4 @@
 TEXT="CHANGE TEXT FOR EMAIL HERE"
 
 
-/sbin/setuser abc python /app/plexemail/scripts/plexEmail.py -c /config/config.conf -n "$TEXT""
+/sbin/setuser abc python /app/plexemail/scripts/plexEmail.py -c /config/config.conf -n "$TEXT"
