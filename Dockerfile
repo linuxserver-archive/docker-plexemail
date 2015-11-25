@@ -3,7 +3,8 @@ MAINTAINER smdion <me@seandion.com>
 ENV APTLIST="python2.7 python-requests git nano"
 
 #Applying stuff
-RUN apt-get update -q && \
+RUN add-apt-repository ppa:fkrull/deadsnakes-python2.7 && \
+apt-get update -q && \
 apt-get install $APTLIST -qy && \
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
