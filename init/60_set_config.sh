@@ -18,4 +18,6 @@ if [ ! -f /config/testscripts/test_plexemail.sh ]; then
   cp /defaults/test_plexemail.sh /config/testscripts/test_plexemail.sh
 fi
 
+crontab /defaults/plexemail
+
 chown abc:abc -R /config
