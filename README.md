@@ -9,14 +9,22 @@ Is a script that aggregates all new TV and movie releases for the past x days th
 ## Usage
 
 ```
-docker create --name=plexemail -v /etc/localtime:/etc/localtime:ro -v <path to data>:/config -e PGID=<gid> -e PUID=<uid>  -p 80:80 linuxserver/plexemail
+docker create --name=plexemail \
+	-v /etc/localtime:/etc/localtime:ro \
+	-v <path to config>:/config \
+	-v <path to "Plex Media Server" folder>:/plex \
+	-e PGID=<gid> \
+	-e PUID=<uid>  \
+	-p 80:8080 \
+	linuxserver/plexemail
 ```
 
 **Parameters**
 
-* `-p 80` - the port(s)
+* `-p 8080` - the port(s)
 * `-v /etc/localtime` for timesync - *optional*
-* `-v /config` -
+* `-v /config` - PlexEmail config folder
+* `-v /plex` - "Plex Media Server" folder from Plex server
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
