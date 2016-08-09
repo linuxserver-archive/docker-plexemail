@@ -1,0 +1,3 @@
+# Run every sunday at 11 PM
+*/15 * * * * s6-setuidgid abc python /app/plexemail/scripts/plexEmail.py -c /config/config.conf;
+
