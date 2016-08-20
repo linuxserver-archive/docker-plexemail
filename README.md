@@ -47,7 +47,8 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ## Setting up the application 
 
 * Edit the config.conf in the /config folder.
-* Update the /cron/crontab as necessary.
+* Update the /config/cron/plexemail as necessary, restart the container for any changes to take effect.
+
 * See project GIT for more information on configuration: https://github.com/jakewaldron/PlexEmail
 
 ## Info
