@@ -18,13 +18,13 @@ docker create --name=plexemail \
 -e PGID=<gid> \
 -e PUID=<uid>  \
 -e TZ=<timezone> \
--p 80:80 \
+-p 8080:8080 \
 linuxserver/plexemail
 ```
 
 **Parameters**
 
-* `-p 80` - the port(s)
+* `-p 8080` - the port(s)
 * `-v /config` - PlexEmail config folder
 * `-v /plex` - "Plex Media Server" folder from Plex server
 * `-e PGID` for GroupID - see below for explanation
@@ -51,8 +51,6 @@ Edit the config.conf in the /config folder.
 Update the /config/cron/plexemail as necessary, restart the container for any changes to take effect.
 
 See project GIT for more information on configuration: https://github.com/jakewaldron/PlexEmail
-
-** Important note for unraid users or those running services such as a webserver on port 80, change port 80 assignment **
 
 ## Info
 
