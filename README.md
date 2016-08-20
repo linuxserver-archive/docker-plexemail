@@ -55,5 +55,5 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 * To monitor the logs of the container in realtime `docker logs -f plexmail`.
 
 ## Versions
-+ **09.08.16:** Rebase to alpine
++ **20.08.16:** Rebase to alpine
 + **10.11.15:** Initial Release 

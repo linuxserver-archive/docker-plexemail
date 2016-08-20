@@ -5,11 +5,11 @@ mkdir -p \
 	/config/cron
 
 # copy config
-[[ ! -f /config/config.conf ]] && cp \
+[[ ! -e /config/config.conf ]] && cp \
 	/defaults/config.conf /config/config.conf
-[[ ! -f /app/plexemail/web/index.html ]] && \
+[[ ! -e /app/plexemail/web/index.html ]] && \
 	cp /defaults/index.html /app/plexemail/web/index.html
-[[ ! -f /config/cron/plexemail ]] && cp \
+[[ ! -e /config/cron/plexemail ]] && cp \
 	/defaults/plexemail /config/cron/plexemail
 
 # set crontab
