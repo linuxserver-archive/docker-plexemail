@@ -5,5 +5,5 @@ MAINTAINER smdion <me@seandion.com>
 COPY root/ /
 
 # ports and volumes
-VOLUME /config
+VOLUME /config /plex
 EXPOSE 80
