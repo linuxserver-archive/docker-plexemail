@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# install app
+[[ ! -d /app/plexemail/.git ]] && \
+	git clone https://github.com/jakewaldron/PlexEmail.git /app/plexemail
+
+# permissions
+chown -R abc:abc \
+	/app

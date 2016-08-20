@@ -1,3 +1,0 @@
-#!/bin/bash
-cd /app/plexemail/web/
-/sbin/setuser abc python -m SimpleHTTPServer 8080

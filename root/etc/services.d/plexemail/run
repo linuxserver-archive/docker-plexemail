@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+cd /app/plexemail/web/
+
+exec \
+	s6-setuidgid abc python -m SimpleHTTPServer 8080
