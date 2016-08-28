@@ -13,7 +13,7 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 
 A script that aggregates all new TV and movie releases for the past x days then writes to your web directory and sends out an email.
 
-[!][plexemail](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexemail-icon.png)][plexemurl]
+[![plexemail](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexemail-icon.png)][plexemurl]
 [plexemurl]: https://github.com/jakewaldron/PlexEmail
 
 ## Usage
