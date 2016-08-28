@@ -6,8 +6,15 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/plexemail
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexemail.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexemail.svg)][hub]
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-plexemail)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-plexemail/)
+[hub]: https://hub.docker.com/r/linuxserver/plexemail/
 
-Is a script that aggregates all new TV and movie releases for the past x days then writes to your web directory and sends out an email.
+A script that aggregates all new TV and movie releases for the past x days then writes to your web directory and sends out an email.
+
+[![plexemail](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexemail-icon.png)][plexemurl]
+[plexemurl]: https://github.com/jakewaldron/PlexEmail
 
 ## Usage
 
@@ -57,5 +64,7 @@ See project GIT for more information on configuration: https://github.com/jakewa
 * To monitor the logs of the container in realtime `docker logs -f plexmail`.
 
 ## Versions
+
++ **28.08.16:** Add badges to README.
 + **20.08.16:** Rebase to alpine
 + **10.11.15:** Initial Release 
