@@ -11,7 +11,10 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 [![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-plexemail)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-plexemail/)
 [hub]: https://hub.docker.com/r/linuxserver/plexemail/
 
-Is a script that aggregates all new TV and movie releases for the past x days then writes to your web directory and sends out an email.
+A script that aggregates all new TV and movie releases for the past x days then writes to your web directory and sends out an email.
+
+[!][plexemail](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexemail-icon.png)][plexemurl]
+[plexemurl]: https://github.com/jakewaldron/PlexEmail
 
 ## Usage
 
