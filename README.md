@@ -65,6 +65,7 @@ See project GIT for more information on configuration: https://github.com/jakewa
 
 ## Versions
 
++ **29.08.16:** Fix every 15 minutes cron.
 + **28.08.16:** Add badges to README.
 + **20.08.16:** Rebase to alpine
 + **10.11.15:** Initial Release 
