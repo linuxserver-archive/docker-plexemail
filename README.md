@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/plexemail
-[![](https://images.microbadger.com/badges/image/linuxserver/plexemail.svg)](http://microbadger.com/images/linuxserver/plexemail "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexemail.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexemail.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-plexemail)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-plexemail/)
+[![](https://images.microbadger.com/badges/version/linuxserver/plexemail.svg)](https://microbadger.com/images/linuxserver/plexemail "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/plexemail.svg)](http://microbadger.com/images/linuxserver/plexemail "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexemail.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexemail.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-plexemail)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-plexemail/)
 [hub]: https://hub.docker.com/r/linuxserver/plexemail/
 
 A script that aggregates all new TV and movie releases for the past x days then writes to your web directory and sends out an email.
@@ -64,10 +64,19 @@ See [PlexEmail][plexemurl] for more information on configuration.
 
 ## Info
 
-* To monitor the logs of the container in realtime `docker logs -f plexmail`.
+* To monitor the logs of the container in realtime `docker logs -f plexemail`.
+
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' plexemail`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/plexemail`
 
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **10.09.16:** Add layer badges to README.
 + **29.08.16:** Fix every 15 minutes cron.
 + **28.08.16:** Add badges to README.
