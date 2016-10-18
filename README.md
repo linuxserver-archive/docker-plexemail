@@ -82,7 +82,7 @@ See [PlexEmail][plexemurl] for more information on configuration.
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **10.09.16:** Add layer badges to README.
 + **29.08.16:** Fix every 15 minutes cron.
 + **28.08.16:** Add badges to README.
