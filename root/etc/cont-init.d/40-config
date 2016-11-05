@@ -17,4 +17,5 @@ crontab /config/cron/plexemail
 
 # permissions
 chown -R abc:abc \
-	/config
+	/config \
+	/app
