@@ -7,6 +7,8 @@ mkdir -p \
 # copy config
 [[ ! -e /config/config.conf ]] && cp \
 	/defaults/config.conf /config/config.conf
+[[ -e /config/index.html.bak ]] && \
+	cp /config/index.html.bak /app/plexemail/web/index.html
 [[ ! -e /app/plexemail/web/index.html ]] && \
 	cp /defaults/index.html /app/plexemail/web/index.html
 [[ ! -e /config/cron/plexemail ]] && cp \
@@ -17,4 +19,5 @@ crontab /config/cron/plexemail
 
 # permissions
 chown -R abc:abc \
-	/config
+	/config \
+	/app
