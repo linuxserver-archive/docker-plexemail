@@ -9,6 +9,7 @@ mkdir -p \
 	/defaults/config.conf /config/config.conf
 [[ -e /config/index.html.bak ]] && \
 	cp /config/index.html.bak /app/plexemail/web/index.html
+	cp -R /config/images.bak/* /app/plexemail/web/images/
 [[ ! -e /app/plexemail/web/index.html ]] && \
 	cp /defaults/index.html /app/plexemail/web/index.html
 [[ ! -e /config/cron/plexemail ]] && cp \
