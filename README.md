@@ -2,6 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: https://github.com/jakewaldron/PlexEmail
+[hub]: https://hub.docker.com/r/linuxserver/plexemail/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,12 +14,10 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # linuxserver/plexemail
 [![](https://images.microbadger.com/badges/version/linuxserver/plexemail.svg)](https://microbadger.com/images/linuxserver/plexemail "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/plexemail.svg)](http://microbadger.com/images/linuxserver/plexemail "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/plexemail.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/plexemail.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-plexemail)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-plexemail/)
-[hub]: https://hub.docker.com/r/linuxserver/plexemail/
 
 A script that aggregates all new TV and movie releases for the past x days then writes to your web directory and sends out an email.
 
-[![plexemail](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexemail-icon.png)][plexemurl]
-[plexemurl]: https://github.com/jakewaldron/PlexEmail
+[![plexemail](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/plexemail-icon.png)][appurl]
 
 ## Usage
 
@@ -66,7 +66,7 @@ Edit the config.conf in the /config folder.
 
 Update the /config/cron/plexemail as necessary, restart the container for any changes to take effect.
 
-See [PlexEmail][plexemurl] for more information on configuration.
+See [PlexEmail][appurl] for more information on configuration.
 
 ## Info
 
